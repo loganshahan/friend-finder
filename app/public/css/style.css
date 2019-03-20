@@ -1,0 +1,11 @@
+#modal1{
+    text-align: center;
+};
+body{
+    margin: 5px;
+};
+.jumbotron{
+    text-align: center;
+    color: pink;
+    background-color: purple;
+};

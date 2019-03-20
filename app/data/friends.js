@@ -1,7 +1,7 @@
 var friendsArray = [
     {
         name: "Trump",
-        photo: "",
+        photo: "https://www.asiasentinel.com/wp-content/uploads/2016/08/nbc-fires-donald-trump-after-he-calls-mexicans-rapists-and-drug-runners.jpg",
         scores: [
             '1',
             '1',
@@ -18,7 +18,7 @@ var friendsArray = [
     },
     {
         name: "Obama",
-        photo: "",
+        photo: "/",
         scores: [
             '5',
             '5',
@@ -35,7 +35,7 @@ var friendsArray = [
     },
     {
         name: "Oscar",
-        photo: "",
+        photo: "/",
         scores: [
             '1',
             '2',
@@ -52,7 +52,7 @@ var friendsArray = [
     },
     {
         name: "MJ",
-        photo: "",
+        photo: "/",
         scores: [
             '5',
             '4',
@@ -69,7 +69,7 @@ var friendsArray = [
     },
     {
         name: "Mickey",
-        photo: "",
+        photo: "/",
         scores: [
             '4',
             '3',
@@ -86,7 +86,7 @@ var friendsArray = [
     },
     {
         name: "Ursula",
-        photo: "",
+        photo: "/",
         scores: [
             '2',
             '2',
@@ -103,7 +103,7 @@ var friendsArray = [
     },
     {
         name: "Minnie",
-        photo: "",
+        photo: "/",
         scores: [
             '3',
             '3',
@@ -120,7 +120,7 @@ var friendsArray = [
     },
     {
         name: "Elmo",
-        photo: "",
+        photo: "/",
         scores: [
             '4',
             '4',
@@ -137,7 +137,7 @@ var friendsArray = [
     },
     {
         name: "Michelle",
-        photo: "",
+        photo: "/",
         scores: [
             '3',
             '3',
@@ -154,7 +154,7 @@ var friendsArray = [
     },
     {
         name: "Ms. Piggy",
-        photo: "",
+        photo: "/",
         scores: [
             '1',
             '2',

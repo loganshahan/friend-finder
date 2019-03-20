@@ -5,10 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Friend Finder</title>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script> -->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/reset.css">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> -->
+    <!-- <link rel="stylesheet" href="css/reset.css"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
 </head>
 <body>
         <header>
@@ -177,6 +179,11 @@
                 </div>
         </div>
 
+        <script
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <script type="text/javascript">
             $(document).ready(function() {
                 $('select').material_select();
@@ -192,6 +199,7 @@
             // Activate submit button
             $('#submitButton').on('click', function(event) {
                 event.preventDefault();
+                console.log("clicked")
                 // Gather user inputs
                 var newFriend = {
                     name: $('#userName').val().trim(),
@@ -208,6 +216,7 @@
                         $('#question9').val().trim(),
                         $('#question10').val().trim()
                     ]
+                    
                 };
                 // console.log('userInput = ' + JSON.stringify(userInput));
                 // Add user inputs to friends list
@@ -220,8 +229,10 @@
                     $("#userMatchImage").attr("src", data.matchImg);
                     console.log(data.matchImg);
                     // Pop open the modal dialog
-                      $('#modal1').modal('open');
+                      
+                    // console.log(data);
                   });
+                  $('#modal1').modal('toggle');
             });
         </script>
     
