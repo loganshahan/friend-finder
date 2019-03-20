@@ -21,8 +21,8 @@ app.get("/api/friends", function(req, res) {
     var totalDiff = 1000;
     
   
-    console.log(newFriend);
-    console.log(friendScore);
+    // console.log(newFriend);
+    // console.log(friendScore);
 
     for(var i=0; i<friends.length; i++){
       var diff = 0;
@@ -41,7 +41,7 @@ app.get("/api/friends", function(req, res) {
   
     friends.push(newFriend);
   
-    res.json(status: 'OK' , matchName: match, matchImage: matchImg);
+    res.json({status: 'OK' , match: match, matchImg: matchImg});
   });
 };
   
