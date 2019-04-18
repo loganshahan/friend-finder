@@ -14,39 +14,47 @@ app.get("/api/friends", function(req, res) {
     // req.body hosts is equal to the JSON post sent from the user
     // This works because of our body parsing middleware
     var newFriend = req.body;
-    var friendScore = newFriend.scores;
+    // var friendScore = newFriend.scores;
+    for(var i=0; i<newFriend.scores.length; i++){
+      newFriend.scores[i] = parseInt(newFriend.scores[i]);
+    }
 
-    var match = '';
-    var matchImg = '';
-    var totalDiff = 1000;
+    // var match = '';
+    // var matchImg = '';
+    var bestFriendIndex = 0;
+    var minimumDiff = 400;
     
   
     
 
     for(var i=0; i<friends.length; i++){
-      var diff = 0;
-      for(var j=0; j<friend[i].scores.length; j++){
-        diff += Math.abs(friendScore - friends[i].scores[j]);
-        
+      var totalDiff = 0;
+      for(var j=0; j<friends[i].scores.length; j++){
+        var difference = Math.abs(newFriend.scores[j] - friends[i].scores[j]);
+        totalDiff += difference
       };
-      if(diff< totalDiff){
-        totalDiff = diff;
-        match = friends[i].name;
-        
-        matchImg = friends[i].photo;
+      if(totalDiff< minimumDiff){
+        bestFriendIndex = i;
+        // totalDiff = diff;
+        minimumDiff = totalDiff
+        // match = friends[i].name;
+        // // var bestFriendIndex = i,
+        // matchImg = friends[i].photo;
       };
     };
 
     console.log(newFriend);
-    console.log(friendScore);
-    console.log(diff);
-    console.log(match);
-    console.log(matchImg);
+    console.log(newFriend.scores);
+    console.log(totalDiff);
+    console.log(bestFriendIndex);
+    // console.log(matchImg);
+    console.log(friends[bestFriendIndex])
 
   
     friends.push(newFriend);
   
-    res.json({status: 'OK' , match: match, matchImg: matchImg});
+    // res.json({status: 'OK' , match: match, matchImg: matchImg});
+    res.json(friends[bestFriendIndex])
   });
 };
   

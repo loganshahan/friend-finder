@@ -224,10 +224,10 @@
                   .done(function(data) {
                       // console.log('response = ' + JSON.stringify(data));
                       // Set the name and image values of friend match
-                      $('#userMatch').html(data.match);
-                      console.log(data.match);
-                    $("#userMatchImage").attr("src", data.matchImg);
-                    console.log(data.matchImg);
+                      $('#userMatch').html(data.friends[bestFriendIndex]);
+                      console.log(data.friends[bestFriendIndex]);
+                    // $("#userMatchImage").attr("src", data.matchImg);
+                    // console.log(data.matchImg);
                     // Pop open the modal dialog
                       
                     // console.log(data);
