@@ -19,8 +19,8 @@ app.get("/api/friends", function(req, res) {
       newFriend.scores[i] = parseInt(newFriend.scores[i]);
     }
 
-    // var match = '';
-    // var matchImg = '';
+    var match = '';
+    var matchImg = '';
     var bestFriendIndex = 0;
     var minimumDiff = 400;
     
@@ -37,9 +37,8 @@ app.get("/api/friends", function(req, res) {
         bestFriendIndex = i;
         // totalDiff = diff;
         minimumDiff = totalDiff
-        // match = friends[i].name;
-        // // var bestFriendIndex = i,
-        // matchImg = friends[i].photo;
+        match = friends[bestFriendIndex].name;
+        matchImg = friends[bestFriendIndex].photo;
       };
     };
 
@@ -47,14 +46,15 @@ app.get("/api/friends", function(req, res) {
     console.log(newFriend.scores);
     console.log(totalDiff);
     console.log(bestFriendIndex);
-    // console.log(matchImg);
+    console.log(match);
+    console.log(matchImg);
     console.log(friends[bestFriendIndex])
 
   
     friends.push(newFriend);
   
-    // res.json({status: 'OK' , match: match, matchImg: matchImg});
-    res.json(friends[bestFriendIndex])
+    res.json({status: 'OK' , match: match, matchImg: matchImg});
+    // res.json(friends[bestFriendIndex])
   });
 };
   

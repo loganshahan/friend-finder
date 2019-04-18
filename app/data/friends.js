@@ -18,7 +18,7 @@ var friendsArray = [
     },
     {
         name: "Obama",
-        photo: "/",
+        photo: "https://www.whitehouse.gov/wp-content/uploads/2017/12/44_barack_obama1.jpg",
         scores: [
             '5',
             '5',
@@ -35,7 +35,7 @@ var friendsArray = [
     },
     {
         name: "Oscar",
-        photo: "/",
+        photo: "https://images-na.ssl-images-amazon.com/images/I/81FfHLN%2BfXL._SY879_.jpg",
         scores: [
             '1',
             '2',
@@ -52,7 +52,7 @@ var friendsArray = [
     },
     {
         name: "MJ",
-        photo: "/",
+        photo: "https://cdn.nba.net/nba-drupal-prod/styles/landscape/http/i2.cdn.turner.com/nba/nba/dam/assets/130828123801-michael-jordan-iso-1998-all-star-game.video-player.jpg?itok=6H7vzj5I",
         scores: [
             '5',
             '4',
@@ -69,7 +69,7 @@ var friendsArray = [
     },
     {
         name: "Mickey",
-        photo: "/",
+        photo: "https://upload.wikimedia.org/wikipedia/en/thumb/d/d4/Mickey_Mouse.png/220px-Mickey_Mouse.png",
         scores: [
             '4',
             '3',
@@ -86,7 +86,7 @@ var friendsArray = [
     },
     {
         name: "Ursula",
-        photo: "/",
+        photo: "https://i.kinja-img.com/gawker-media/image/upload/s--HlGETbp5--/c_scale,f_auto,fl_progressive,q_80,w_800/fqamzu2u8qwknh0ltsfp.jpg",
         scores: [
             '2',
             '2',
@@ -103,7 +103,7 @@ var friendsArray = [
     },
     {
         name: "Minnie",
-        photo: "/",
+        photo: "https://upload.wikimedia.org/wikipedia/en/thumb/6/67/Minnie_Mouse.png/220px-Minnie_Mouse.png",
         scores: [
             '3',
             '3',
@@ -120,7 +120,7 @@ var friendsArray = [
     },
     {
         name: "Elmo",
-        photo: "/",
+        photo: "https://pbs.twimg.com/profile_images/1092451830758547457/EqQ6Csl3_400x400.jpg",
         scores: [
             '4',
             '4',
@@ -137,7 +137,7 @@ var friendsArray = [
     },
     {
         name: "Michelle",
-        photo: "/",
+        photo: "https://www.dailydot.com/wp-content/uploads/2019/04/michelle-obama.jpg",
         scores: [
             '3',
             '3',
@@ -154,7 +154,7 @@ var friendsArray = [
     },
     {
         name: "Ms. Piggy",
-        photo: "/",
+        photo: "https://i.ytimg.com/vi/7s6YIIZjfrQ/maxresdefault.jpg",
         scores: [
             '1',
             '2',
