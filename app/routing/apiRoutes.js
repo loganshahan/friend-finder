@@ -25,8 +25,8 @@ app.get("/api/friends", function(req, res) {
 
     for(var i=0; i<friends.length; i++){
       var diff = 0;
-      for(var j=0; j<friendScore; j++){
-        diff += Math.abs(friends[i].scores[j] - friendScore);
+      for(var j=0; j<friend[i].scores.length; j++){
+        diff += Math.abs(friendScore - friends[i].scores[j]);
         
       };
       if(diff< totalDiff){
